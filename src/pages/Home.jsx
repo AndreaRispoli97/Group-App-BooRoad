@@ -10,6 +10,7 @@ function HomePage() {
 
     return (
         <>
+            {ArrayTrip ? (ArrayTrip.map((e) => (<div key={e.id}>{e.destination}</div>))) : <div><h1>Nessun Viaggio disponibile</h1></div>}
 
 
         </>

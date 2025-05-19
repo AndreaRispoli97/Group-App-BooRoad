@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomePage from './pages/Home'
-import DefaultLayout from './layouts/DefaultLayouts'
-import TripContext from './context/TripContext'
-import ArrayTrip from './data/ArrayTrip'
-
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Home";
+import DefaultLayout from "./layouts/DefaultLayouts";
+import TripContext from "./context/TripContext";
+import ArrayTrip from "./data/ArrayTrip";
+import DetailTrip from "./pages/DetailTrip";
+import DetailUser from "./pages/DetailUser";
 
 function App() {
-
-
   return (
     <>
       <TripContext.Provider value={{ ArrayTrip }}>
@@ -16,16 +15,17 @@ function App() {
           <Routes>
             <Route element={<DefaultLayout />}>
               <Route index element={<HomePage />} />
-              <Route path='/trip/:id' element={<div>Dettagli Viaggio</div>} />
-              <Route path='/user/:id' element={<div>Partecipante X</div>} />
-              <Route path='/about' element={<div>Parliamo di noi</div>} />
+              <Route path="/trip/:id" element={<DetailTrip />} />
+              <Route path="/user/:id" element={<DetailUser />} />
+              <Route path="/operators" element={<div>Operatori</div>} />
+              <Route path="/contacts" element={<div>contatti agenzia</div>} />
             </Route>
-            <Route path='*' element={<div>404</div>} />
+            <Route path="*" element={<div>404</div>} />
           </Routes>
         </BrowserRouter>
       </TripContext.Provider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

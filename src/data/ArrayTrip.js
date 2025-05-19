@@ -1,9 +1,9 @@
-
-
 const viaggi = [
     {
         id: 1,
-        destination: "Roma",
+        destination: "Vietnam On The Road",
+        image: 'vietnam.jpg',
+        operator: 'Marco Rossi',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -61,7 +61,9 @@ const viaggi = [
     },
     {
         id: 2,
-        destination: "Parigi",
+        destination: "New York",
+        image: 'New-york.jpg',
+        operator: 'Luca Bianchi',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -119,7 +121,9 @@ const viaggi = [
     },
     {
         id: 3,
-        destination: "Madrid",
+        destination: "Turchia: Cappadocia tour e Istanbul",
+        image: 'turchia.jpg',
+        operator: 'Simone Ferrari',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -178,6 +182,8 @@ const viaggi = [
     {
         id: 4,
         destination: "Tokyo",
+        image: 'tokyo.jpg',
+        operator: 'Giulia Romano',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -235,7 +241,9 @@ const viaggi = [
 
     {
         id: 5,
-        destination: "New York",
+        destination: "Canarie: Lanzarote & Fuerteventura",
+        image: 'canarie.jpg',
+        operator: 'Chiara Colombo',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -293,7 +301,9 @@ const viaggi = [
 
     {
         id: 6,
-        destination: "Londra",
+        destination: "Indonesia: Bali e Gili",
+        image: 'indonesia.jpg',
+        operator: 'Francesca Martini',
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
@@ -350,4 +360,4 @@ const viaggi = [
     }
 ];
 
-export default viaggi
+export default viaggi;

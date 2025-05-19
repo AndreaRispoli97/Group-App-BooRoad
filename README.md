@@ -1,12 +1,27 @@
-# React + Vite
+# ✈️ BooRoad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descrizione
 
-Currently, two official plugins are available:
+Questa applicazione React mostra un prototipo dell'app Booroad con una lista di viaggi in programma con dettagli essenziali come destinazione, accompagnatore, date di partenza e ritorno. Per ogni viaggio, è possibile visualizzare i dettagli del viaggio stesso o i dettagli dei partecipanti tramite pulsanti dedicati. La navigazione è gestita con React Router.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖊️ Caratteristiche
 
-## Expanding the ESLint configuration
+- Visualizzazione dinamica della lista viaggi tramite array di oggetti.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Navigazione tramite React Router (NavLink e Link) verso pagine di dettaglio.
+
+- Layout responsivo con Bootstrap.
+
+- Pulsanti per accedere ai dettagli del viaggio e ai partecipanti.
+
+- Gestione condizionale della lista: mostra messaggio se non ci sono viaggi.
+
+## 👥 Team di sviluppo
+
+Questo progetto è stato realizzato da:
+
+- Linda Tancini (https://github.com/LindaTancini)
+- Andrea Rispoli (https://github.com/AndreaRispoli97)
+- Esteban Caponio (https://github.com/EstebanCaponio)
+- Vincenzo Tulimieri
+- Gianfranco Mendoza

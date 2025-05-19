@@ -7,7 +7,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'vietnam-on-the-road',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -42,9 +43,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },
@@ -67,7 +68,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'new-york',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -102,9 +104,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },
@@ -127,7 +129,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'turchia-cappadocia-tour-e-istanbul',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -162,9 +165,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },
@@ -187,7 +190,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'tokyo',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -222,9 +226,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },
@@ -247,7 +251,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'canarie-lanzarote-&-fuerteventura',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -282,9 +287,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },
@@ -307,7 +312,8 @@ const viaggi = [
         status: 'In corso',
         start_date: '19/05/2025',
         end_date: '25/05/2025',
-        participants: [
+        slug: 'indonesia-bali-e-gili',
+        partecipants: [
             {
                 user_id: 1,
                 name: 'Andrea',
@@ -342,9 +348,9 @@ const viaggi = [
             },
             {
                 user_id: 5,
-                name: 'Raffaele',
-                surname: 'Copolla',
-                email: 'raffaelelcapolla@gmail.com',
+                name: 'Gaetano',
+                surname: 'Frascolla',
+                email: 'gaetanofrascolla@gmail.com',
                 phone_number: '123456789',
                 CF: 'CPLRFL80A01F205E'
             },

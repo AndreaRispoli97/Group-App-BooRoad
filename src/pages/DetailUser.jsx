@@ -1,32 +1,31 @@
 import { useContext, useState } from "react";
 import TripContext from "../context/TripContext";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 function DetailUser() {
   const { id } = useParams();
   const { ArrayTrip } = useContext(TripContext);
 
-  const currentTrip = ArrayTrip && ArrayTrip[id - 1];
-
-  if (!currentTrip) {
-    return <div>Caricamento o dati non disponibili...</div>;
-  }
-
-  const [partecipantsList, setPartecipantsList] = useState(currentTrip.partecipants);
   const [filterName, setFilterName] = useState('');
+  const [partecipantsList, setPartecipantsList] = useState([]);
+
+  useEffect(() => {
+    if (ArrayTrip && ArrayTrip[id - 1] && ArrayTrip[id - 1].partecipants) {
+      setPartecipantsList(ArrayTrip[id - 1].partecipants);
+    }
+  }, [ArrayTrip, id]);
 
   function searchName(e) {
     e.preventDefault();
 
-    const allPartecipants = currentTrip.partecipants;
-
-    if (filterName.trim() !== '') {
-      const filtered = allPartecipants.filter(p =>
-        `${p.name} ${p.surname}`.toLowerCase().includes(filterName.toLowerCase())
+    if (ArrayTrip && ArrayTrip[id - 1] && ArrayTrip[id - 1].partecipants) {
+      const filteredResults = ArrayTrip[id - 1].partecipants.filter(arr =>
+        `${arr.name}${arr.surname}`.toLowerCase().trim().includes(filterName.toLowerCase().trim())
       );
-      setPartecipantsList(filtered);
+      setPartecipantsList(filteredResults);
     } else {
-      setPartecipantsList(allPartecipants);
+      setPartecipantsList([]);
     }
   }
 
